@@ -1,1 +1,1 @@
-- Bangalore geojson (BBMP.geojson) obtained from: https://github.com/datameet/Municipal_Spatial_Data/tree/master/Bangalore
+- The Bangalore shape file is obtained from: https://kgis.ksrsac.in/bengalurugis/
