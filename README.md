@@ -4,7 +4,7 @@
 
 01 - Xarray fundamentals
 
-02 - Create a cloud free median composite on a small area
+02 - [Create a cloud free median composte on a small area[(notebooks/02_cloud_free_composite_S2_small_area_2.ipynb)
 
 03 - Dask fundamentals
 
