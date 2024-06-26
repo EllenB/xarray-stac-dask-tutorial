@@ -44,7 +44,12 @@ pip install coiled "dask[complete]"
 ```
 ADD IMAGE
 
-If this gives an error like "", you need to install "pip" first using the following command:
+If this gives an error like "", you need to install "pip" first, install pip first:
+
+```
+conda install pip
+```
+
 
 ## 3. Connect to your cloud
 
