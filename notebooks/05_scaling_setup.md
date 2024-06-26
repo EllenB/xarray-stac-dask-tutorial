@@ -38,7 +38,13 @@ Activate the conda environment by typing: `conda activate coiledenv` and press *
 
 TO ADD IMAGE
 
-Subsequently
+Install (by using pip or conda) the coiled Python library:
+```
+pip install coiled "dask[complete]"
+```
+ADD IMAGE
+
+If this gives an error like "", you need to install "pip" first using the following command:
 
 ## 3. Connect to your cloud
 
