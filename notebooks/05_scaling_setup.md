@@ -30,7 +30,7 @@ Navigate to the
 
 ## 2. Install coiled
 
-It is advisable to create a virtual environment in Miniconda (or Anaconda). Open the **Anaconda Prompt** or **Terminal** and type `conda create coiledenv`. You can choose any other name other than coiledenv if you prefer as this is just an example. Press **Enter**:
+It is advisable to create a virtual environment in Miniconda (or Anaconda). Open the **Anaconda Prompt** or **Terminal** and type `conda create -n coiledenv`. You can choose any other name other than coiledenv if you prefer as this is just an example. Press **Enter**:
 
 TO ADD IMAGE
 
