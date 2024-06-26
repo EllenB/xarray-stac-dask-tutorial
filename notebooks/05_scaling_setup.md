@@ -20,15 +20,17 @@ The steps for setting up an AWS account can be found in the [AWS documentation](
 
 It is suggested to use the [AWS Free Tier account](https://aws.amazon.com/free/). 
 
-It would suffice to stop at this step for installing coiled. In general, when installing AWS it is good practice not to work from your root account and create seperate users. This allows you to download AWS user credentials on your local computer. In step 3 (Connect to your cloud) below, the setup process would be slightly different in case you proceed creating a seperate user or not (and hence already have AWS credentials at this step here).
+In general, when installing AWS it is good practice not to work from your root account and create seperate users and subsequently log in from your user account. Additionally, at this step you can also create AWS user credentials which can be stored on your local computer. 
 
-If you have decided not to create AWS credentials here, please proceed immediately to step 2 (Install coiled) below. 
-
-In case you want to create at this point of time your AWS credentials, first log into your [AWS (root) account](https://aws.amazon.com/console/). 
+First, log into your AWS root account:
 
 ADD IMAGE
 
-Navigate to the 
+Go to the XXX:
+
+ADD IMAGE
+
+You should see your AWS credentials most likely in your directory `C:\Users\yourusername` in your computer.
 
 
 
@@ -65,18 +67,10 @@ ADD TWO IMAGES
 
 ## 3. Connect to your cloud
 
-In what next, we need to make a distinction whether you have already AWS credentials on your computer or not. If you would have AWS installation credentials already, this would look something like this in your home directory (e.g. C:\Users\yourusername). 
+## 4. Trouble shooting
 
-ADD IMAGE
+In some cases, the above steps may not work. The [video from Coiled]() may be useful in helping you troubleshoot. Alternatively, you may opt for a manual set-up. The steps are described on the Coiled website. 
 
-The other situation is that you do not have yet any of such credentials yet. Below, we make a distinction between having and not having AWS credentials (please see step 1 above).
 
-### 3.1. Not having any AWS credentials.
-
-### 3.2. Already having AWS credentials. 
 
    
-
-
-
- 
