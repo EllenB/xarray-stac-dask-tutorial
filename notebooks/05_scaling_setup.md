@@ -49,7 +49,7 @@ If this gives an error like "", you need to install "pip" first, install pip fir
 ```
 conda install pip
 ```
-
+TO ADD SCREENSHOT
 
 ## 3. Connect to your cloud
 
