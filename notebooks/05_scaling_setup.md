@@ -1,10 +1,10 @@
 In the next step, we use a Dask cluster in the cloud. One option for doing so, is to use [coiled.io](https://www.coiled.io/). 
-Coiled can be used with AWS, Azure or a GCP account. The advantage is that one does not have to bother about the installation of the infrastructure for scaling. 
+Coiled can be used with Amazon Web Services (AWS), [Azure](https://docs.coiled.io/user_guide/setup/azure/cli.html) or the Google Cloud Platform ([GCP](https://docs.coiled.io/user_guide/setup/gcp/cli.html)) account. The advantage is that one does not have to bother about the installation of the infrastructure for scaling. 
 **Disclaimer:** I do not work for coiled nor is this is advertisement :blush:.
 
 Till recently, it was possible to use Microsoft's Planetary Computer but this option has been stopped (please see Github discussion [here](https://github.com/microsoft/PlanetaryComputer/discussions/347)),
 
-The installation nodes are based on the coiled.io documentation ([here](https://docs.coiled.io/user_guide/setup/index.html)) and [here](https://youtu.be/12mnkIYSekk) and [here](https://docs.coiled.io/user_guide/setup/aws/manual.html). The latter is for the manual installation. In the steps below, we document the automated installation and use Amazon Web Services (AWS) as the cloud provider at the backend. Other options are the Google Cloud Platform ([GCP](https://docs.coiled.io/user_guide/setup/gcp/cli.html)) or [Azure](https://docs.coiled.io/user_guide/setup/azure/cli.html).
+Below, we use the AWS installation. The installation nodes are based on the coiled.io documentation [here](https://docs.coiled.io/user_guide/setup/index.html), [here](https://youtu.be/12mnkIYSekk) and [here](https://docs.coiled.io/user_guide/setup/aws/manual.html). The latter is for the manual installation. In the steps below, we document a semi-automated installation which should work whether you have already AWS keys installed on your system or have none installed. Below, we create a seperate user/AIM role for Coiled. 
 
 The steps below are done a Windows 10 computer. 
 
@@ -12,27 +12,17 @@ The steps below are done a Windows 10 computer.
 
 ### a. Python (Miniconda or Ananaconda) installation
 
-TO ADD - Video of Quisheng Wu class
+The link to install Miniconda (which is more space consuming) can be found [here](https://docs.anaconda.com/miniconda/miniconda-other-installer-links/). 
+
+If you prefer the larger installation, you can proceed with the [Anaconda installation]().
 
 ### b. Sign up for an Amazon Web Services (AWS) account. 
 
 The steps for setting up an AWS account can be found in the [AWS documentation](https://docs.aws.amazon.com/SetUp/latest/UserGuide/setup-AWSsignup.html).
 
-It is suggested to use the [AWS Free Tier account](https://aws.amazon.com/free/). 
+It is suggested to use the [AWS Free Tier account](https://aws.amazon.com/free/). This will install your root account for AWS. 
 
-In general, when installing AWS it is good practice not to work from your root account and create seperate users and subsequently log in from your user account. Additionally, at this step you can also create AWS user credentials which can be stored on your local computer. 
-
-First, log into your AWS root account:
-
-ADD IMAGE
-
-Go to the XXX:
-
-ADD IMAGE
-
-You should see your AWS credentials most likely in your directory `C:\Users\yourusername` in your computer.
-
-
+Optionally, you can protect this root account by using a Multi Factor Authentication (MFA). For more information, please see the [AWS documentation](https://aws.amazon.com/iam/features/mfa/) and [video](https://www.youtube.com/watch?v=e6A7z7FqQDE). 
 
 ## 2. Install coiled
 
@@ -57,17 +47,21 @@ conda install pip
 ```
 TO ADD SCREENSHOT
 
+Before creating the API token next, ensure that you are signed into Coiled (using your password you have created in the previous step).
+
 Create the Coiled API token:
 
 ```
 coiled login
 ```
-
 ADD TWO IMAGES
 
-## 3. Connect to your cloud
 
-## 4. Trouble shooting
+### 3. Create a user in AWS
+
+## 4. Connect to your cloud
+
+## 5. Trouble shooting
 
 In some cases, the above steps may not work. The [video from Coiled]() may be useful in helping you troubleshoot. Alternatively, you may opt for a manual set-up. The steps are described on the Coiled website. 
 
