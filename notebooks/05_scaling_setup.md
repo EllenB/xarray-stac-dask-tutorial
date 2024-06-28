@@ -24,7 +24,7 @@ It is suggested to use the [AWS Free Tier account](https://aws.amazon.com/free/)
 
 Optionally, you can protect this root account by using a Multi Factor Authentication (MFA). For more information, please see the [AWS documentation](https://aws.amazon.com/iam/features/mfa/) and [video](https://www.youtube.com/watch?v=e6A7z7FqQDE). 
 
-## 2. Install coiled
+## 2. Install coiled - THIS DOES NOT WORK YET - IN PROGRESS
 
 It is advisable to create a virtual environment in Miniconda (or Anaconda). Open the **Anaconda Prompt** or **Terminal** and type `conda create -n coiledenv`. You can choose any other name other than coiledenv if you prefer as this is just an example. Press **Enter**:
 
@@ -58,6 +58,9 @@ ADD TWO IMAGES
 
 
 ### 3. Create a user in AWS
+
+Login to your root account that you have just created under step 1 above:
+
 
 ## 4. Connect to your cloud
 
