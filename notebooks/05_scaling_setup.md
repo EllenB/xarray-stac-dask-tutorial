@@ -57,16 +57,9 @@ coiled login
 ADD TWO IMAGES
 
 
-### 3. Create a user in AWS
-
-Login to your root account that you have just created under step 1 above:
-
 
 ## 4. Connect to your cloud
 
-## 5. Trouble shooting
-
-In some cases, the above steps may not work. The [video from Coiled]() may be useful in helping you troubleshoot. Alternatively, you may opt for a manual set-up. The steps are described on the Coiled website. 
 
 
 
