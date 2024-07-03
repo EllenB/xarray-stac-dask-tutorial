@@ -4,7 +4,7 @@ Coiled can be used with Amazon Web Services (AWS), [Azure](https://docs.coiled.i
 
 Till recently, it was possible to use Microsoft's Planetary Computer but this option has been stopped (please see Github discussion [here](https://github.com/microsoft/PlanetaryComputer/discussions/347)),
 
-Below, we use the AWS installation. The installation nodes are based on the coiled.io documentation [here](https://docs.coiled.io/user_guide/setup/index.html), [here](https://youtu.be/12mnkIYSekk) and [here](https://docs.coiled.io/user_guide/setup/aws/manual.html). The latter is for the manual installation. In the steps below, we document a semi-automated installation which should work whether you have already AWS keys installed on your system or have none installed. Below, we create a seperate user/AIM role for Coiled. 
+Below, we use the AWS installation. The installation nodes are based on the coiled.io documentation [here](https://docs.coiled.io/user_guide/setup/index.html), [here](https://youtu.be/12mnkIYSekk) and [here](https://docs.coiled.io/user_guide/setup/aws/manual.html). The latter is for the manual installation. In the steps below, we follow the video [here] but add some additional steps below for setting up AWS in case you are new to this.  
 
 The steps below are done a Windows 10 computer. 
 
@@ -16,6 +16,8 @@ The link to install Miniconda (which is more space consuming) can be found [here
 
 If you prefer the larger installation, you can proceed with the [Anaconda installation]().
 
+The following Github repository also shows you how to do the installation with Miniconda 
+
 ### b. Sign up for an Amazon Web Services (AWS) account. 
 
 The steps for setting up an AWS account can be found in the [AWS documentation](https://docs.aws.amazon.com/SetUp/latest/UserGuide/setup-AWSsignup.html).
@@ -24,7 +26,7 @@ It is suggested to use the [AWS Free Tier account](https://aws.amazon.com/free/)
 
 Optionally, you can protect this root account by using a Multi Factor Authentication (MFA). For more information, please see the [AWS documentation](https://aws.amazon.com/iam/features/mfa/) and [video](https://www.youtube.com/watch?v=e6A7z7FqQDE). 
 
-## 2. Install coiled - THIS DOES NOT WORK YET - IN PROGRESS
+## 2. Install coiled 
 
 It is advisable to create a virtual environment in Miniconda (or Anaconda). Open the **Anaconda Prompt** or **Terminal** and type `conda create -n coiledenv`. You can choose any other name other than coiledenv if you prefer as this is just an example. Press **Enter**:
 
@@ -56,9 +58,10 @@ coiled login
 ```
 ADD TWO IMAGES
 
+Check if the token on your computer matches the token in your coiled dashboard:
 
 
-## 4. Connect to your cloud
+## 3. Connect to your cloud
 
 
 
