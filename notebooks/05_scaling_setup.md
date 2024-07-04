@@ -66,13 +66,17 @@ In the next page, you can click on **Create user**:
 
 ![Alt text](../images/aws_10.PNG)
 
-From now on, you can forget about the root account and continue further with this user account. Optionally, you can **download the .csv file** that shows some details or **Email sign-in instructions**:
+From now on, you can forget about the root account and continue further with this user account. Click on **Download the .csv file** that shows your details (as you will need them to log in from the user account). Optionally, you can also click on **Email sign-in instructions**:
 
 ![Alt text](../images/aws_11.PNG) - TO BLUR OUT
 
 Log out from the root account and log in from the user account going forward:
 
+![Alt text](../images/aws_12.PNG) - TO BLUR OUT
 
+You will get the following windown. Notice that optionally you can also here activate the MFA:
+
+![Alt text](../images/aws_13.PNG) - TO BLUR OUT
 
 
 ## 2. Install coiled 
