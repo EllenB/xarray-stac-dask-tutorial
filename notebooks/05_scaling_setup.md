@@ -4,7 +4,7 @@ Coiled can be used with Amazon Web Services (AWS), [Azure](https://docs.coiled.i
 
 Till recently, it was possible to use Microsoft's Planetary Computer but this option has been stopped (please see Github discussion [here](https://github.com/microsoft/PlanetaryComputer/discussions/347)),
 
-Below, we use the AWS installation. The installation nodes are based on the coiled.io documentation [here](https://docs.coiled.io/user_guide/setup/index.html), [here](https://youtu.be/12mnkIYSekk) and [here](https://docs.coiled.io/user_guide/setup/aws/manual.html). The latter is for the manual installation. In the steps below, we follow the video [here] but add some additional steps below for setting up AWS in case you are new to this.  
+Below, we use the AWS installation. The installation nodes are based on the coiled.io documentation [here](https://docs.coiled.io/user_guide/setup/index.html), [here](https://youtu.be/12mnkIYSekk) and [here](https://docs.coiled.io/user_guide/setup/aws/manual.html). The latter is for the manual installation. In the steps below, we follow the [video of coiled]() but add some additional steps below for setting up AWS in case you are new to this.  
 
 The steps below are done a Windows 10 computer. 
 
@@ -16,15 +16,64 @@ The link to install Miniconda (which is more space consuming) can be found [here
 
 If you prefer the larger installation, you can proceed with the [Anaconda installation]().
 
-The following Github repository also shows you how to do the installation with Miniconda 
+The following Github repository also shows you how to do the installation with Miniconda - TO ADD. 
 
 ### b. Sign up for an Amazon Web Services (AWS) account. 
 
 The steps for setting up an AWS account can be found in the [AWS documentation](https://docs.aws.amazon.com/SetUp/latest/UserGuide/setup-AWSsignup.html).
 
-It is suggested to use the [AWS Free Tier account](https://aws.amazon.com/free/). This will install your root account for AWS. 
+It is suggested to use the [AWS Free Tier account](https://aws.amazon.com/free/). This will install your root account for AWS. A good [video](https://www.youtube.com/watch?v=CjKhQoYeR4Q) can be found here. 
 
-Optionally, you can protect this root account by using a Multi Factor Authentication (MFA). For more information, please see the [AWS documentation](https://aws.amazon.com/iam/features/mfa/) and [video](https://www.youtube.com/watch?v=e6A7z7FqQDE). 
+Optionally, you can protect this root account by using a Multi Factor Authentication (MFA). 
+
+After creating your root account, it is safer to create a user account and operate from there. In order to do so, log into your AWS root account first with the password you created in the previous step:
+
+![Alt text](../images/aws_1.PNG)
+
+And then fill in your e-mail and password:
+
+![Alt text](../images/aws_2.PNG)
+
+Once you are logged in, type in **IAM** which stands for Identity and Access Management and click on **IAM**:
+
+![Alt text](../images/aws_3.PNG)
+
+If you want to enable (optionally) use Multi Factor Authentication (MFA) as an extra level of safety, you will be prompted for this (and this usually happens through the app on your phone). For more information, please see the [AWS documentation](https://aws.amazon.com/iam/features/mfa/) and [video](https://www.youtube.com/watch?v=e6A7z7FqQDE). 	Twilio Authy Authenticator, Duo Mobile, Microsoft Authenticator, Google Authenticator, Symantec VIP are some of the options you can choose. I choose Google Authenticator. 
+
+Next, we create a new User (for administrative tasks). Click on **Users**:
+
+![Alt text](../images/aws_4.PNG)
+
+Click on "Create user**:
+
+![Alt text](../images/aws_5.PNG)
+
+And click on **Provide user access to the AWS Management Console - optional**, select **I want to create an IAM user** and select **custom password**, type in a password, uncheck **Users must create a new password at next sign-in - Recommended** and click on **Next**:
+
+![Alt text](../images/aws_6.PNG)
+
+![Alt text](../images/aws_7.PNG)
+
+In the next page, click on **Attach policies directly**. Alternatively, you can add users to a group (which you e.g. call "admin" and attach the policies in that group and select **AdministratorAccess**: 
+
+![Alt text](../images/aws_8.PNG)
+
+Scroll down and click on **Next**:
+
+![Alt text](../images/aws_9.PNG)
+
+In the next page, you can click on **Create user**:
+
+![Alt text](../images/aws_10.PNG)
+
+From now on, you can forget about the root account and continue further with this user account. Optionally, you can **download the .csv file** that shows some details or **Email sign-in instructions**:
+
+![Alt text](../images/aws_11.PNG) - TO BLUR OUT
+
+Log out from the root account and log in from the user account going forward:
+
+
+
 
 ## 2. Install coiled 
 
@@ -51,7 +100,7 @@ TO ADD SCREENSHOT
 
 Before creating the API token next, ensure that you are signed into Coiled (using your password you have created in the previous step).
 
-Create the Coiled API token:
+Create the Coiled API token from you Miniconda/Anaconda environment:
 
 ```
 coiled login
@@ -60,8 +109,14 @@ ADD TWO IMAGES
 
 Check if the token on your computer matches the token in your coiled dashboard:
 
+ADD TWO IMAGES
+
 
 ## 3. Connect to your cloud
+
+Sign into your cloud account. 
+
+Go to the 
 
 
 
