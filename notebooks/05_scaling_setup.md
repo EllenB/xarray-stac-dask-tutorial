@@ -76,18 +76,22 @@ Log out from the root account and log in from the user account going forward:
 
 You will get the following windown. Notice that optionally you can also here activate the MFA:
 
-![Alt text](../images/aws_13.PNG) - TO BLUR OUT
+![Alt text](../images/aws_13.PNG)
 
 
 ## 2. Install coiled 
 
-It is advisable to create a virtual environment in Miniconda (or Anaconda). Open the **Anaconda Prompt** or **Terminal** and type `conda create -n coiledenv`. You can choose any other name other than coiledenv if you prefer as this is just an example. Press **Enter**:
+It is advisable to create a virtual environment in Miniconda (or Anaconda). Open the **Miniconda/Anaconda Prompt** or **Terminal** by going to the **Windows Start** and type in **miniconda** which launches the Anaconda/Miniconda prompt: 
 
-TO ADD IMAGE
+![Alt text](../images/coiled_1.PNG)
+
+At the prompt, type `conda create -n coiledenv`. You can choose any other name other than coiledenv if you prefer as this is just an example. Press **Enter**:
+
+![Alt text](../images/coiled_2.PNG)
 
 Activate the conda environment by typing: `conda activate coiledenv` and press **Enter**:
 
-TO ADD IMAGE
+![Alt text](../images/coiled_3.PNG)
 
 Install (by using pip or conda) the coiled Python library:
 ```
