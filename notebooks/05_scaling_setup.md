@@ -97,34 +97,96 @@ Install (by using pip or conda) the coiled Python library:
 ```
 pip install coiled "dask[complete]"
 ```
-ADD IMAGE
+![Alt text](../images/coiled_4.PNG)
 
 If this gives an error like "", you need to install "pip" first, install pip first:
 
 ```
 conda install pip
 ```
-TO ADD SCREENSHOT
 
 Before creating the API token next, ensure that you are signed into Coiled (using your password you have created in the previous step).
 
-Create the Coiled API token from you Miniconda/Anaconda environment:
+Create the Coiled API token from you Miniconda/Anaconda environment by typing:
 
 ```
 coiled login
 ```
-ADD TWO IMAGES
+The following screen opens in Coiled. Click on **Authorize access**:
 
-Check if the token on your computer matches the token in your coiled dashboard:
+![Alt text](../images/coiled_5.PNG) - TO BLUR
 
-ADD TWO IMAGES
+Check if the token on the Anaconda prompt matches the token in your coiled dashboard:
+
+![Alt text](../images/coiled_6.PNG) - TO BLUR
 
 
 ## 3. Connect to your cloud
 
 Sign into your cloud account. 
 
-Go to the 
+![Alt text](../images/coiled_7.PNG) -TO ADD AND RENUMBER
+
+Go to the **Cloud Provider** and click on **AWS**:
+
+![Alt text](../images/coiled_7.PNG) - TO BLUR
+
+Log into the AWS account using your user account:
+
+In the section **Before you start**, click on **Next**:
+
+![Alt text](../images/coiled_8.PNG) 
+
+In the **Credentials**, click on **Connect to AWS**:
+
+![Alt text](../images/coiled_10.PNG) 
+
+The following page opens:
+
+![Alt text](../images/coiled_10.PNG) 
+
+Check **I promise to come back here after I click Create stack** and click on **LaunchCloudFormation**:
+
+![Alt text](../images/coiled_11.PNG) 
+
+The following page opens in AWS (truncated):
+
+![Alt text](../images/coiled_12.PNG) 
+
+Click on **I acknowledge that AWS CloudFormation might create IAM resources** and click on "Create stack":
+
+![Alt text](../images/coiled_13.PNG) 
+
+Once installation is done, you will get this:
+
+![Alt text](../images/coiled_15.PNG) 
+
+
+Go to the Anaconda Prompt and type in:
+```
+coiled run echo "Hello, world"
+```
+
+![Alt text](../images/coiled_16.PNG) - BLUR
+
+You can also see in your dashboard that your cluster has run:
+
+![Alt text](../images/coiled_17.PNG) - BLUR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
