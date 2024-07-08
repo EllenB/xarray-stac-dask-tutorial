@@ -27,7 +27,7 @@ Optionally, you can protect this root account by using a Multi Factor Authentica
 
 After creating your root account, it is safer to create a user account and operate from there. In order to do so, log into your AWS root account first with the password you created in the previous step:
 
-![Alt text](../images/aws_1.PNG)
+![Alt text](../images/aws_1.png)
 
 And then fill in your e-mail and password:
 
@@ -35,43 +35,43 @@ And then fill in your e-mail and password:
 
 Once you are logged in, type in **IAM** (which stands for Identity and Access Management) on the dashboard and click on **IAM**:
 
-![Alt text](../images/aws_3.PNG)
+![Alt text](../images/aws_3.png)
 
 If you want to enable (optionally) Multi Factor Authentication (MFA) as an extra level of safety, you will be prompted for this (and this usually happens through the app on your phone). For more information, please see the [AWS documentation](https://aws.amazon.com/iam/features/mfa/) and [video](https://www.youtube.com/watch?v=e6A7z7FqQDE). 	Twilio, Authy Authenticator, Duo Mobile, Microsoft Authenticator, Google Authenticator, Symantec VIP are some of the options you can choose. We are using Authy (as it allows different accounts at the same time).
 
 Next, we create a new User (for administrative tasks). Click on **Users**:
 
-![Alt text](../images/aws_4.PNG)
+![Alt text](../images/aws_4.png)
 
-Click on "Create user**:
+Click on **Create user**:
 
-![Alt text](../images/aws_5.PNG)
+![Alt text](../images/aws_5.png)
 
 And click on **Provide user access to the AWS Management Console - optional**, select **I want to create an IAM user** and select **custom password**, type in a password, uncheck **Users must create a new password at next sign-in - Recommended** and click on **Next**:
 
-![Alt text](../images/aws_6.PNG)
+![Alt text](../images/aws_6.png)
 
-![Alt text](../images/aws_7.PNG)
+![Alt text](../images/aws_7.png)
 
 In the next page, click on **Attach policies directly** and select **AdministratorAccess**. Alternatively, you can add users to a group (which you e.g. call "admin" and attach the policies in that group instead): 
 
-![Alt text](../images/aws_8.PNG)
+![Alt text](../images/aws_8.png)
 
 Scroll down and click on **Next**:
 
-![Alt text](../images/aws_9.PNG)
+![Alt text](../images/aws_9.png)
 
 In the next page, you can click on **Create user**:
 
-![Alt text](../images/aws_10.PNG)
+![Alt text](../images/aws_10.png)
 
 From now on, you can forget about the root account and continue further with this user account. Click on **Download the .csv file** that shows your details (as you will need them to log in from the user account). Optionally, you can also click on **Email sign-in instructions**:
 
-![Alt text](../images/aws_11.PNG) - TO BLUR OUT
+![Alt text](../images/aws_11.PNG) 
 
 Log out from the root account and log in from the user account going forward:
 
-![Alt text](../images/aws_12.PNG) - TO BLUR OUT
+![Alt text](../images/aws_12.png) 
 
 You will get the following window. Notice that optionally you can also here activate the MFA:
 
