@@ -82,7 +82,7 @@ You will get the following window. Notice that optionally you can also here acti
 
 It is advisable to create a virtual environment in Miniconda (or Anaconda). Open the **Miniconda/Anaconda Prompt** or **Terminal** by going to the **Windows Start** and type in **miniconda** which launches the Anaconda/Miniconda prompt: 
 
-![Alt text](../images/coiled_1.PNG)
+![Alt text](../images/coiled_1.png)
 
 At the prompt, type `conda create -n coiledenv`. You can choose any other name other than coiledenv if you prefer as this is just an example. Press **Enter**:
 
@@ -123,15 +123,17 @@ Check if the token on the Anaconda prompt matches the token in your coiled dashb
 
 ## 3. Connect to your cloud
 
-Sign into your Coiled account: 
+Sign into your Coiled account: https://cloud.coiled.io/login 
 
-![Alt text](../images/coiled_7.PNG) -TO ADD AND RENUMBER
+Log into the AWS account using your user account (and not your root account):
+
+![Alt text](../images/aws_12.png) 
 
 Go to the **Cloud Provider** and click on **AWS**:
 
-![Alt text](../images/coiled_7.PNG) - TO BLUR
+![Alt text](../images/coiled_7a.PNG)
 
-Log into the AWS account using your user account (and not your root account):
+![Alt text](../images/coiled_7.PNG)
 
 In the section **Before you start**, click on **Next**:
 
@@ -139,7 +141,7 @@ In the section **Before you start**, click on **Next**:
 
 In the **Credentials**, click on **Connect to AWS**:
 
-![Alt text](../images/coiled_10.PNG) 
+![Alt text](../images/coiled_10.png) 
 
 The following page opens:
 
@@ -147,7 +149,7 @@ The following page opens:
 
 Check **I promise to come back here after I click Create stack** and click on **LaunchCloudFormation**:
 
-![Alt text](../images/coiled_11.PNG) 
+![Alt text](../images/coiled_11.png) 
 
 The following page opens in AWS (truncated):
 
@@ -155,23 +157,21 @@ The following page opens in AWS (truncated):
 
 Click on **I acknowledge that AWS CloudFormation might create IAM resources** and click on "Create stack":
 
-![Alt text](../images/coiled_13.PNG) 
+![Alt text](../images/coiled_13.png) 
 
 Once installation is done, you will get this:
 
 ![Alt text](../images/coiled_15.PNG) 
 
-
 Go to the Anaconda Prompt and type in:
 ```
 coiled run echo "Hello, world"
 ```
-
-![Alt text](../images/coiled_16.PNG) - BLUR
+![Alt text](../images/coiled_16.PNG)
 
 You can also see in your dashboard that your cluster has run:
 
-![Alt text](../images/coiled_17.PNG) - BLUR
+![Alt text](../images/coiled_17.PNG)
 
 
 
