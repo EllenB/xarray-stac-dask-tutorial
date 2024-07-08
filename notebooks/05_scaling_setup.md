@@ -4,7 +4,7 @@ Coiled can be used with Amazon Web Services (AWS), [Azure](https://docs.coiled.i
 
 Till recently, it was possible to use Microsoft's Planetary Computer but this option has been stopped (please see Github discussion [here](https://github.com/microsoft/PlanetaryComputer/discussions/347)),
 
-Below, we use the AWS installation. The installation nodes are based on the coiled.io documentation [here](https://docs.coiled.io/user_guide/setup/index.html), [here](https://youtu.be/12mnkIYSekk) and [here](https://docs.coiled.io/user_guide/setup/aws/manual.html). The latter is for the manual installation. In the steps below, we follow the [video of coiled]() but add some additional steps below for setting up AWS in case you are new to this.  
+Below, we use the AWS installation. The installation nodes are based on the coiled.io documentation [here](https://docs.coiled.io/user_guide/setup/index.html), [here](https://youtu.be/12mnkIYSekk) and [here](https://docs.coiled.io/user_guide/setup/aws/manual.html). The latter is for the manual installation. In the steps below, we follow the [video of coiled](https://www.youtube.com/watch?v=d6XouzFP_AY) but add some additional steps below for setting up AWS in case you are new to this.  
 
 The steps below are done a Windows 10 computer. 
 
