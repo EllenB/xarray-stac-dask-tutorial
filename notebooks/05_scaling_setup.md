@@ -139,15 +139,15 @@ In the section **Before you start**, click on **Next**:
 
 ![Alt text](../images/coiled_8.PNG) 
 
-In the **Credentials**, click on **Connect to AWS**:
+In the **Credentials**, click on **Connect to AWS** and select the **Automatic (Recommended)** setup:
+
+![Alt text](../images/coiled_9.PNG) 
+
+The following page opens in AWS:
 
 ![Alt text](../images/coiled_10.png) 
 
-The following page opens:
-
-![Alt text](../images/coiled_10.PNG) 
-
-Check **I promise to come back here after I click Create stack** and click on **LaunchCloudFormation**:
+Check **I promise to come back here after I click Create stack** and click on **Launch CloudFormation**:
 
 ![Alt text](../images/coiled_11.png) 
 
