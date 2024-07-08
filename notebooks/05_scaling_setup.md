@@ -98,7 +98,8 @@ pip install coiled "dask[complete]"
 ```
 ![Alt text](../images/coiled_4.PNG)
 
-If this gives an error like "", you need to install "pip" first, install pip first:
+If this gives an error like "pip' is not recognized as an internal or external command,
+operable program or batch file.", you can solve this by installing pip:
 
 ```
 conda install pip
