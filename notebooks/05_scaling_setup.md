@@ -131,7 +131,7 @@ Log into the AWS account using your user account (and not your root account):
 
 Go to the **Cloud Provider** and click on **AWS**:
 
-![Alt text](../images/coiled_7a.PNG)
+![Alt text](../images/coiled_7_a.png)
 
 ![Alt text](../images/coiled_7.PNG)
 
