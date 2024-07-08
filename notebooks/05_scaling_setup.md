@@ -1,10 +1,9 @@
 In the next step, we use a Dask cluster in the cloud. One option for doing so, is to use [coiled.io](https://www.coiled.io/). 
 Coiled can be used with Amazon Web Services (AWS), [Azure](https://docs.coiled.io/user_guide/setup/azure/cli.html) or the Google Cloud Platform ([GCP](https://docs.coiled.io/user_guide/setup/gcp/cli.html)) account. The advantage is that one does not have to bother about the installation of the infrastructure for scaling. 
-**Disclaimer:** I do not work for coiled nor is this is advertisement :blush:.
 
 Till recently, it was possible to use Microsoft's Planetary Computer but this option has been stopped (please see Github discussion [here](https://github.com/microsoft/PlanetaryComputer/discussions/347)),
 
-Below, we use the AWS installation. The installation nodes are based on the coiled.io documentation [here](https://docs.coiled.io/user_guide/setup/index.html), [here](https://youtu.be/12mnkIYSekk) and [here](https://docs.coiled.io/user_guide/setup/aws/manual.html). The latter is for the manual installation. In the steps below, we follow the [video of coiled](https://www.youtube.com/watch?v=d6XouzFP_AY) but add some additional steps below for setting up AWS in case you are new to this.  We also suggest to create a virtual environment in Miniconda/Anaconda. 
+Below, we use the AWS installation and follow the automated installation and follow the Youtube [video of Coiled](https://www.youtube.com/watch?v=d6XouzFP_AY) but add some additional steps below for setting up AWS in case you are new to this.  We also suggest to create a virtual environment in Miniconda/Anaconda. 
 
 The steps below are done a Windows 10 computer. 
 
@@ -12,19 +11,19 @@ The steps below are done a Windows 10 computer.
 
 ### a. Python (Miniconda or Ananaconda) installation
 
-The link to install Miniconda (which is more space consuming) can be found [here](https://docs.anaconda.com/miniconda/miniconda-other-installer-links/). 
+The link to install Miniconda (which is more space consuming in comparison to Anaconda) can be found [here](https://docs.anaconda.com/miniconda/miniconda-other-installer-links/). 
 
-If you prefer the larger installation, you can proceed with the [Anaconda installation]().
+If you prefer the larger Anaconda installation, you can proceed with the [Anaconda installation](https://www.anaconda.com/download).
 
-The following Github repository also shows you how to do the installation with Miniconda - TO ADD. 
+The following Github repository also shows you how to do the installation with Miniconda - **TO ADD**. 
 
 ### b. Sign up for an Amazon Web Services (AWS) account. 
 
 The steps for setting up an AWS account can be found in the [AWS documentation](https://docs.aws.amazon.com/SetUp/latest/UserGuide/setup-AWSsignup.html).
 
-It is suggested to use the [AWS Free Tier account](https://aws.amazon.com/free/). This will install your root account for AWS. A good [video](https://www.youtube.com/watch?v=CjKhQoYeR4Q) can be found here. 
+It is suggested to use the [AWS Free Tier account](https://aws.amazon.com/free/). This will install your root account for AWS. A good video can be found [here](https://www.youtube.com/watch?v=CjKhQoYeR4Q). 
 
-Optionally, you can protect this root account by using a Multi Factor Authentication (MFA). 
+Optionally, you can protect this root account by using a Multi Factor Authentication (MFA). Please see below for some information.  
 
 After creating your root account, it is safer to create a user account and operate from there. In order to do so, log into your AWS root account first with the password you created in the previous step:
 
@@ -34,11 +33,11 @@ And then fill in your e-mail and password:
 
 ![Alt text](../images/aws_2.PNG)
 
-Once you are logged in, type in **IAM** which stands for Identity and Access Management and click on **IAM**:
+Once you are logged in, type in **IAM** (which stands for Identity and Access Management) on the dashboard and click on **IAM**:
 
 ![Alt text](../images/aws_3.PNG)
 
-If you want to enable (optionally) use Multi Factor Authentication (MFA) as an extra level of safety, you will be prompted for this (and this usually happens through the app on your phone). For more information, please see the [AWS documentation](https://aws.amazon.com/iam/features/mfa/) and [video](https://www.youtube.com/watch?v=e6A7z7FqQDE). 	Twilio Authy Authenticator, Duo Mobile, Microsoft Authenticator, Google Authenticator, Symantec VIP are some of the options you can choose. I choose Google Authenticator. 
+If you want to enable (optionally) Multi Factor Authentication (MFA) as an extra level of safety, you will be prompted for this (and this usually happens through the app on your phone). For more information, please see the [AWS documentation](https://aws.amazon.com/iam/features/mfa/) and [video](https://www.youtube.com/watch?v=e6A7z7FqQDE). 	Twilio, Authy Authenticator, Duo Mobile, Microsoft Authenticator, Google Authenticator, Symantec VIP are some of the options you can choose. We are using Authy (as it allows different accounts at the same time).
 
 Next, we create a new User (for administrative tasks). Click on **Users**:
 
@@ -54,7 +53,7 @@ And click on **Provide user access to the AWS Management Console - optional**, s
 
 ![Alt text](../images/aws_7.PNG)
 
-In the next page, click on **Attach policies directly**. Alternatively, you can add users to a group (which you e.g. call "admin" and attach the policies in that group and select **AdministratorAccess**: 
+In the next page, click on **Attach policies directly** and select **AdministratorAccess**. Alternatively, you can add users to a group (which you e.g. call "admin" and attach the policies in that group instead): 
 
 ![Alt text](../images/aws_8.PNG)
 
@@ -74,7 +73,7 @@ Log out from the root account and log in from the user account going forward:
 
 ![Alt text](../images/aws_12.PNG) - TO BLUR OUT
 
-You will get the following windown. Notice that optionally you can also here activate the MFA:
+You will get the following window. Notice that optionally you can also here activate the MFA:
 
 ![Alt text](../images/aws_13.PNG)
 
@@ -123,7 +122,7 @@ Check if the token on the Anaconda prompt matches the token in your coiled dashb
 
 ## 3. Connect to your cloud
 
-Sign into your cloud account. 
+Sign into your Coiled account: 
 
 ![Alt text](../images/coiled_7.PNG) -TO ADD AND RENUMBER
 
@@ -131,7 +130,7 @@ Go to the **Cloud Provider** and click on **AWS**:
 
 ![Alt text](../images/coiled_7.PNG) - TO BLUR
 
-Log into the AWS account using your user account:
+Log into the AWS account using your user account (and not your root account):
 
 In the section **Before you start**, click on **Next**:
 
