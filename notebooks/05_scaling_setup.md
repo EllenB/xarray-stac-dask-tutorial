@@ -1,9 +1,9 @@
-In the next step, we use a Dask cluster in the cloud. One option for doing so, is to use [coiled.io](https://www.coiled.io/). 
-Coiled can be used with Amazon Web Services (AWS), [Azure](https://docs.coiled.io/user_guide/setup/azure/cli.html) or the Google Cloud Platform ([GCP](https://docs.coiled.io/user_guide/setup/gcp/cli.html)) account. The advantage is that one does not have to bother about the installation of the infrastructure for scaling. 
+In the next step, a Dask cluster in the cloud is used. One option for doing so, is to use [coiled.io](https://www.coiled.io/). 
+Coiled can be used with Amazon Web Services (AWS), [Azure](https://docs.coiled.io/user_guide/setup/azure/cli.html) or the Google Cloud Platform ([GCP](https://docs.coiled.io/user_guide/setup/gcp/cli.html)) account. The advantage is that one does not have to bother installing the infrastructure for scaling. 
 
-Till recently, it was possible to use Microsoft's Planetary Computer but this option has been stopped (please see Github discussion [here](https://github.com/microsoft/PlanetaryComputer/discussions/347)),
+Till recently, it was possible to use Microsoft's Planetary Computer but this option has been stopped (please see GitHub discussion [here](https://github.com/microsoft/PlanetaryComputer/discussions/347)),
 
-Below, we use the AWS installation and follow the automated installation and follow the Youtube [video of Coiled](https://www.youtube.com/watch?v=d6XouzFP_AY) but add some additional steps below for setting up AWS in case you are new to this.  We also suggest to create a virtual environment in Miniconda/Anaconda. 
+Below, we use the AWS installation and apply the automated installation. The Youtube [video of Coiled](https://www.youtube.com/watch?v=d6XouzFP_AY) is followed but some additional steps for setting up AWS are added in case you are new to this.  We also suggest to create a virtual environment in Miniconda/Anaconda. 
 
 The steps below are done a Windows 10 computer. 
 
