@@ -8,5 +8,5 @@
 
 03 - Dask fundamentals
 
-04 - Scaling in the cloud
+04 - Installing Dask in AWS
 
