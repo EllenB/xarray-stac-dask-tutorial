@@ -1,5 +1,7 @@
 # xarray-stac-tutorial
 
+IN PROGRESS
+
 00 - Data download
 
 01 - Xarray fundamentals
