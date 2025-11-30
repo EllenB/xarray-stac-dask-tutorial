@@ -10,5 +10,5 @@ IN PROGRESS
 
 03 - Dask fundamentals
 
-04 - Installing Dask in AWS
+04 - [Installing Dask in AWS](notebooks/05_scaling_setup.md) - Under review
 
