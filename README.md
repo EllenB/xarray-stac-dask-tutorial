@@ -16,5 +16,5 @@ IN PROGRESS
 
 05 - Processing larger data with Dask - NDVI/RGB composite or other (Climate)
 
-06 - [Digital Elevation Models with xarray, pystac and PyGMT](notebooks/06_DEM_Nilgiris.ipynb): A digital elevation model for The Nilgiris area. 
+06 - [Digital Elevation Models with xarray, pystac and PyGMT](notebooks/06_raster_pystac.ipynb): A digital elevation model for The Nilgiris area. 
 
