@@ -1,8 +1,10 @@
-# xarray-stac-tutorial
+# xarray-stac-dask-pyGMT
+
+This is a repository where I post some of my learnings for xarray, pystac, dask and PyGMT.
 
 IN PROGRESS
 
-00 - Data download
+00 - Data download - using the CDS api
 
 01 - Xarray fundamentals
 
@@ -10,5 +12,9 @@ IN PROGRESS
 
 03 - Dask fundamentals
 
-04 - [Installing Dask in AWS](notebooks/05_scaling_setup.md) - Under review
+04 - [Installing Dask in AWS using Coiled](notebooks/05_scaling_setup.md) - Under review
+
+05 - Processing larger data with Dask - NDVI/RGB composite or other (Climate)
+
+06 - [Digital Elevation Models with xarray, pystac and PyGMT](notebooks/06_DEM_Nilgiris.ipynb): A digital elevation model for The Nilgiris area. 
 
