@@ -14,7 +14,15 @@ IN PROGRESS
 
 04 - [Installing Dask in AWS using Coiled](notebooks/05_scaling_setup.md) - Under review
 
-05 - Processing larger data with Dask - NDVI/RGB composite or other (Climate)
+05 - Processing larger data with Dask - NDVI/RGB composite or other for larger area (Karnataka, Tamil Nadu) or (large) climate example. 
 
 06 - [Digital Elevation Models with xarray, pystac and PyGMT](notebooks/06_raster_pystac.ipynb): A digital elevation model for The Nilgiris area. 
+
+0x - Other 
+
+-  Extracting information regarding the processing baseline in a collection
+
+- stackstac versus odc-stac (in progress)
+
+
 
