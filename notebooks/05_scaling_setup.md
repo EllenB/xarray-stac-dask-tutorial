@@ -90,18 +90,12 @@ Activate the conda environment by typing: `conda activate coiledenv` and press *
 
 ![Alt text](../images/coiled_3.PNG)
 
-Install (by using pip or conda) the coiled Python library:
+Install by conda the coiled Python library:
 ```
-pip install coiled "dask[complete]"
+conda install -c conda-forge coiled "dask[complete]" -y
 ```
-![Alt text](../images/coiled_4.PNG)
+![Alt text](../images/coiled_4bis.PNG)
 
-If this gives an error like "pip' is not recognized as an internal or external command,
-operable program or batch file.", you can solve this by installing pip:
-
-```
-conda install pip
-```
 
 Before creating the API token next, ensure that you are signed into Coiled (using your password you have created in the previous step).
 
@@ -112,7 +106,7 @@ coiled login
 ```
 The following screen opens in Coiled. Click on **Authorize access**:
 
-![Alt text](../images/coiled_5.PNG) - TO BLUR
+![Alt text](../images/coiled_5.PNG) 
 
 Check if the token on the Anaconda prompt matches the token in your coiled dashboard:
 
