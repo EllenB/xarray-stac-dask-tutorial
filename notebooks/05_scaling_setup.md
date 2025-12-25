@@ -23,7 +23,7 @@ It is suggested to use the [AWS Free Tier account](https://aws.amazon.com/free/)
 
 Optionally, you can protect this root account by using a Multi Factor Authentication (MFA). Please see below for some information.  
 
-After creating your root account, it is safer to create a user account and operate from there. In order to do so, log into your AWS root account first with the password you created in the previous step:
+After creating your root account, it is safer to create a user account and operate from there. In order to do so, log into your AWS root account first with the password you created in the previous step. You can log in from https://console.aws.amazon.com/
 
 ![Alt text](../images/aws_1.png)
 
